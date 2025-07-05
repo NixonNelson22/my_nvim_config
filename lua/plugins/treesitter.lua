@@ -1,11 +1,27 @@
 return {
-	'nvim-treesitter/nvim-treesitter',
-	build = ':TSUpdate',
-	opts ={
-		ensure_installed = { 
-			"htmldjango","c","lua",
-			"vim","vimdoc","query",
-			"markdown","markdown_inline","python"
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	opts = {
+		ensure_installed = {
+			"htmldjango",
+			"c",
+			"lua",
+			"vim",
+			"vimdoc",
+			"markdown",
+			"python",
+			"json",
+			"jsonc",
+			"bash",
+			"html",
+			"groovy",
+			"xml",
+			"yaml",
+			"c_sharp",
+			"nginx",
+			"angular",
+			"css",
+			"dockerfile",
 		},
 		sync_install = false,
 		auto_install = true,
@@ -21,5 +37,5 @@ return {
 			end,
 			additional_vim_regex_highlighting = false,
 		},
-	}
+	},
 }
